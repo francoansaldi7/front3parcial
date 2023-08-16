@@ -19,7 +19,7 @@ function Form(props){
 
     return (
         <form onSubmit={validationRules}>
-            <label htmlFor="order">What would you like to order?</label>
+            <label htmlFor="order">Please place your order</label>
             <input 
             type="text" 
             id="order"

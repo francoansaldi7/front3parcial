@@ -1,10 +1,14 @@
 # Front III - Deliverable
 
-This project was started with a template that provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# React Project with Vite
 
-To run the project, clone it from the GitHub repo, open your console and navigate to the folder where you downloaded the files. 
+This is a basic React project template created using Vite, a fast build tool for modern web development.
 
-Then write the following commands:
+## Getting Started
 
-1) npm install 
-2) npm run dev 
+1. Clone the repository: git clone <repository-url>
+2. Navigate to the project directory: cd <project-directory>
+3. Install dependencies: npm install
+4. Start the development server: npm run dev
+
+## 
