@@ -6,8 +6,8 @@ This is a basic React project template created using Vite, a fast build tool for
 
 ## Getting Started
 
-1. Clone the repository: git clone <repository-url>
-2. Navigate to the project directory: cd <project-directory>
+1. Clone the repository: git clone https://github.com/francoansaldi7/front3parcial.git
+2. Navigate to the project directory: cd 'projectDirectoryRoute'
 3. Install dependencies: npm install
 4. Start the development server: npm run dev
 
