@@ -1,7 +1,9 @@
+import './Card.css'
+
 function Card(){
     return (
         <div>
-            asdfa
+            card test 
         </div>
     )
 }
