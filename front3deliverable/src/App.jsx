@@ -1,23 +1,23 @@
 import { useState } from 'react'
 import './App.css'
 import Form from './Form'
-import Order from './Order'
+import Card from './Card'
 
 function App() {
-  const [theOrder, setTheOrder] = useState()
+  const [card, setCard] = useState()
 
-  function handleSubmit(order){
-    setTheOrder(order);
+  function handleSubmit(card){
+    setCard(card);
   }
 
   function handleDelete(){
-    setTheOrder();
+    setCard();
   }
 
   return (
     <>
       <Form onOrder={handleSubmit} />
-      {theOrder ? <Order onDelete={handleDelete}>{theOrder}</Order> : undefined}
+      {card ? <Card onDelete={handleDelete}>{card}</Card> : undefined}
     </>
   )
 }
