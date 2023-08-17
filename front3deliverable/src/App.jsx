@@ -6,8 +6,8 @@ import Card from './Card'
 function App() {
   const [card, setCard] = useState()
 
-  function handleSubmit(card){
-    setCard(card);
+  function handleSubmit(nombre, juego){
+    setCard(({nombre: nombre, juego: juego}));
   }
 
   function handleDelete(){
@@ -17,7 +17,7 @@ function App() {
   return (
     <>
       <Form onOrder={handleSubmit} />
-      {card ? <Card onDelete={handleDelete}>{card}</Card> : undefined}
+      {card ? <Card onDelete={handleDelete} nombre = {card.nombre} juego ={card.juego}></Card> : undefined}
     </>
   )
 }

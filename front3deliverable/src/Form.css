@@ -4,12 +4,8 @@ form{
     gap: 16px;
 } 
 
-.card{
-    display: block;
-    font-size: 1.1em;
-    margin-block-start: 0.4em;
-    margin-block-end: 0.4em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;color: #213547;
+label{
+    color: cadetblue;
+    font-weight: bold;
 }
+

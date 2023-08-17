@@ -9,17 +9,19 @@ function Form(props){
 
     function validationRules(event){
         event.preventDefault()
-        if(nombre.trim() !== ''){
-            props.onOrder(nombre)
+        if(nombre.length <= 3 || nombre.trim()[0] === ''){
+            setMessage('Por favor ingresa un nombre válido (mínimo 3 caracteres y sin espacios al principio)')
+        } else if (juego.trim() === '' || juego.length < 6) {
+            setMessage('Por favor ingresa un juego válido (mínimo 6 caracteres)')
+        } else{
+            props.onOrder(nombre, juego)
             setMessage('')
-        } else {
-            setMessage('Por favor chequea que la información sea correcta')
-        }
+        }  
     }
 
     return (
         <form onSubmit={validationRules}>
-            <label className="card" htmlFor="nombre">¿Cuál es tu nombre?</label>
+            <label htmlFor="nombre">¿Cuál es tu nombre?</label>
             <input 
             type="text" 
             id="nombre"
@@ -28,7 +30,7 @@ function Form(props){
             onChange={(e) => setNombre(e.target.value)}
             />
 
-            <label className="card" htmlFor="juego">¿Cuál es tu video juego favorito?</label>
+            <label htmlFor="juego">¿Cuál es tu video juego favorito?</label>
             <input 
             type="text" 
             id="juego"
@@ -37,7 +39,7 @@ function Form(props){
             onChange={(e) => setJuego(e.target.value)}
             />
             {message ? <div>{message}</div> : null}
-            <button type="submit">Enviar</button>
+            <button className="formButton" type="submit">Enviar</button>
         </form>
     )
 }
